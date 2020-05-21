@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: zuulservice
+  profiles:
+    active:
+      docker           #default / docker
+  cloud:
+    config:
+      enabled: true      
+      uri: http://172.20.1.2:8888    #默认是 http://localhost:8888
+
+
